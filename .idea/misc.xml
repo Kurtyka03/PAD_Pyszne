@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kurty/AndroidStudioProjects/PAD_Pyszne/app/src/main/res/layout/activity_glowna_strona.xml" value="0.4773550724637681" />
+        <entry key="..\:/Users/kurty/AndroidStudioProjects/PAD_Pyszne/app/src/main/res/layout/activity_koszyk.xml" value="0.4773550724637681" />
         <entry key="..\:/Users/kurty/AndroidStudioProjects/PAD_Pyszne/app/src/main/res/layout/activity_main.xml" value="0.490036231884058" />
+        <entry key="..\:/Users/kurty/AndroidStudioProjects/PAD_Pyszne/app/src/main/res/layout/activity_makarony.xml" value="0.4773550724637681" />
       </map>
     </option>
   </component>

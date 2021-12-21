@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Restauracje.Makarony">
 
     <Toolbar
         android:layout_width="match_parent"
@@ -29,51 +29,15 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Koszyk"
-            android:onClick="page_Koszyk"/>
+            android:text="Koszyk" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ilosc: XX"
-            />
+            android:onClick="page_Koszyk"/>
 
 
     </Toolbar>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="615dp"
-        android:text="Makarony">
-
-    </TextView>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="435dp"
-        android:text="Pizza"></TextView>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="565dp"
-        android:text="Przejdz Do strony"
-        android:onClick="page_Makarony"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="520dp"
-        android:text="Chińszczyzna">
-        android:text="Chińszczyzna">
-
-    </TextView>
-
 
 </RelativeLayout>

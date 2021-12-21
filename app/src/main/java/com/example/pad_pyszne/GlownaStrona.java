@@ -6,14 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.pad_pyszne.Restauracje.Makarony;
-
-public class MainActivity extends AppCompatActivity {
+public class GlownaStrona extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_glowna_strona);
     }
 
     public void page_Glowna(View view) {
@@ -28,11 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void page_Koszyk(View view) {
         Intent i = new Intent(this, Koszyk.class);
-        startActivity(i);
-    }
-
-    public void page_Makarony(View view) {
-        Intent i = new Intent(this, Makarony.class);
         startActivity(i);
     }
 }

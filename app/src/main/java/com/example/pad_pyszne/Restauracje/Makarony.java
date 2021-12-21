@@ -1,4 +1,4 @@
-package com.example.pad_pyszne;
+package com.example.pad_pyszne.Restauracje;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,14 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.pad_pyszne.Restauracje.Makarony;
+import com.example.pad_pyszne.GlownaStrona;
+import com.example.pad_pyszne.Koszyk;
+import com.example.pad_pyszne.MainActivity;
+import com.example.pad_pyszne.R;
 
-public class MainActivity extends AppCompatActivity {
+public class Makarony extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_makarony);
     }
 
     public void page_Glowna(View view) {
@@ -28,11 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void page_Koszyk(View view) {
         Intent i = new Intent(this, Koszyk.class);
-        startActivity(i);
-    }
-
-    public void page_Makarony(View view) {
-        Intent i = new Intent(this, Makarony.class);
         startActivity(i);
     }
 }

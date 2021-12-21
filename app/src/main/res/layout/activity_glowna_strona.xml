@@ -17,25 +17,26 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Glowna"
-            android:onClick="page_Glowna"/>
+            android:onClick="page_Glowna"
+            android:text="Glowna" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Zamowienia"
-            android:onClick="page_Zamownienia"/>
+            android:onClick="page_Zamownienia"
+            android:text="Zamowienia" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Koszyk" />
+            android:text="Koszyk"
+            android:onClick="page_Koszyk"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ilosc: XX"
-            android:onClick="page_Koszyk"/>
+            />
 
 
     </Toolbar>

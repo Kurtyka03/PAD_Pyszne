@@ -11,12 +11,12 @@ import com.example.pad_pyszne.Koszyk;
 import com.example.pad_pyszne.MainActivity;
 import com.example.pad_pyszne.R;
 
-public class MakaronyZKrewetkami extends AppCompatActivity {
+public class MakaronZKrewetkamiPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_makarony_zkrewetkami);
+        setContentView(R.layout.activity_makaron_zkrewetkami_page);
     }
 
     public void page_Glowna(View view) {

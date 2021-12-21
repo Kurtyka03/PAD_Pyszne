@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PAD_Pyszne">
         <activity
+            android:name=".Restauracje.MakaronyMenu.MakaronyZKrewetkami.MakaronZKrewetkamiPage"
+            android:exported="false" />
+        <activity
             android:name=".Restauracje.MakaronyMenu.MakarooBolonski.MakaronBolonskiPage"
             android:exported="false" />
         <activity

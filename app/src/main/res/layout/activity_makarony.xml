@@ -29,16 +29,48 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Koszyk"
-            android:onClick="page_Koszyk"/>
+            android:onClick="page_Koszyk"
+            android:text="Koszyk" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ilosc: XX"
-            />
+            android:text="Ilosc: XX" />
 
 
     </Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="589dp"
+        android:text="Makaron z Kreetkami\n Wysmienity makaron z
+krewetkami i sosem do wyboru"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="542dp"
+        android:onClick="MakaronZKrewetkami"
+        android:text="Zamow I personalizuj" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="489dp"
+        android:text="Makaron Boloński\nMakaron z sosem Bolonskim z wieloma dodatkami"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="442dp"
+        android:text="Zamow I personalizuj"
+        android:onClick="MakaronBolonski"/>
 
 </RelativeLayout>

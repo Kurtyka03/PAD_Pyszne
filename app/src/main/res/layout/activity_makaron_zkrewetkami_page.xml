@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -40,5 +39,99 @@
 
 
     </Toolbar>
+
+    <CheckBox
+        android:id="@+id/checkBox_Szynka"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="267dp"
+        android:layout_marginBottom="564dp"
+        android:text="Szynka" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Ser"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="515dp"
+        android:text="Ser" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Jajko"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="468dp"
+        android:text="Jajko" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="611dp"
+        android:text="Dodatki:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="421dp"
+        android:text="Makaron:" />
+
+    <RadioGroup
+        android:layout_width="154dp"
+        android:layout_height="162dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="246dp"
+        android:id="@+id/radiogrup">
+
+        <RadioButton
+            android:id="@+id/radioButton_sojowy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="makaron"
+            android:text="Sojowy" />
+
+        <RadioButton
+            android:id="@+id/radioButton2_przenny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="makaron"
+            android:text="Przenny" />
+
+        <RadioButton
+            android:id="@+id/radioButton3_wieloziarnisty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="makaron"
+            android:text="Wieloziarnisty" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_zamow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="135dp"
+        android:enabled="false"
+        android:onClick="zamow"
+        android:text="Zamow" />
+
 
 </RelativeLayout>

@@ -41,4 +41,14 @@
 
     </Toolbar>
 
+    <TextView
+        android:id="@+id/Zamowienia"
+        android:layout_width="363dp"
+        android:layout_height="634dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="3dp"
+        android:text="TextView" />
+
 </RelativeLayout>

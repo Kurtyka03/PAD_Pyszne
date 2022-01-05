@@ -29,14 +29,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Koszyk"
-            android:onClick="page_Koszyk"/>
+            android:onClick="page_Koszyk"
+            android:text="Koszyk" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ilosc: XX"
-            />
+            android:id="@+id/KoszykIlosc"/>
 
 
     </Toolbar>

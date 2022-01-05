@@ -35,7 +35,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ilosc: XX" />
+            android:text="Ilosc: XX"
+            android:id="@+id/KoszykIlosc"/>
 
 
     </Toolbar>
@@ -45,9 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="589dp"
-        android:text="Makaron z Kreetkami\n Wysmienity makaron z
-krewetkami i sosem do wyboru"
-        />
+        android:text="Makaron z Kreetkami   25zł\n Wysmienity makaron z
+krewetkami i sosem do wyboru" />
 
     <Button
         android:layout_width="match_parent"
@@ -62,8 +62,7 @@ krewetkami i sosem do wyboru"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="489dp"
-        android:text="Makaron Boloński\nMakaron z sosem Bolonskim z wieloma dodatkami"
-        />
+        android:text="Makaron Boloński   23zł\nMakaron z sosem Bolonskim z wieloma dodatkami" />
 
     <Button
         android:layout_width="match_parent"

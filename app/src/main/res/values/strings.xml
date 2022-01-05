@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PAD_Pyszne</string>
+
+    <string-array name="Sos_array">
+        <item>Czosnek</item>
+        <item>Pomidorowy</item>
+        <item>Smietankowy</item>
+    </string-array>
 </resources>

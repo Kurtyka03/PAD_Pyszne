@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Koszyk">
+    tools:context=".Podsumowanie">
 
     <Toolbar
         android:layout_width="match_parent"
@@ -33,32 +33,22 @@
             android:text="Koszyk" />
 
         <TextView
-            android:id="@+id/KoszykIlosc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ilosc: XX" />
+            android:text="Ilosc: XX"
+            android:id="@+id/KoszykIlosc"/>
 
 
     </Toolbar>
 
     <TextView
-        android:id="@+id/Zamowienia"
-        android:layout_width="362dp"
-        android:layout_height="575dp"
+        android:id="@+id/ZamowieniePod"
+        android:layout_width="333dp"
+        android:layout_height="367dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="62dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="167dp"
-        android:layout_marginBottom="9dp"
-        android:text="Zamow"
-        android:onClick="zamow"/>
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="289dp"
+        android:text="TextView" />
 
 </RelativeLayout>

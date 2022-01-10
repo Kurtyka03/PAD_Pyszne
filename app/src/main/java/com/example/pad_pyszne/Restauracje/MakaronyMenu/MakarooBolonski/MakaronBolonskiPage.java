@@ -84,41 +84,45 @@ public class MakaronBolonskiPage extends AppCompatActivity {
         CheckBox Szynka = findViewById(R.id.checkBox_Szynka);
         Spinner Sosy = findViewById(R.id.Spinner_Sos);
 
-        Koszyk += 1;
-        if(sojowy.isChecked()){
-            Danie = Danie + "\n"+ Koszyk +")Bolonesse:\n Makaron Sojowy \n Dodatki:";
+        if(Koszyk == 7){
+            Toast.makeText(this, "Osiagnieto limit zamowien", Toast.LENGTH_SHORT).show();
+        }else {
+            Koszyk += 1;
+            if (sojowy.isChecked()) {
+                Danie = Danie + "\n" + Koszyk + ")Bolonesse:\n Makaron Sojowy \n Dodatki:";
+            }
+            if (przenny.isChecked()) {
+                Danie = Danie + "\n" + Koszyk + ")Bolonesse:\n Makaron Przenny \n Dodatki:";
+            }
+            if (wieloziarnisty.isChecked()) {
+                Danie = Danie + "\n" + Koszyk + ")Bolonesse:\n Makaron Wieloziarnisty \n Dodatki:";
+            }
+            if (Jajko.isChecked()) {
+                Danie = Danie + " Jajko ";
+            }
+            if (Ser.isChecked()) {
+                Danie = Danie + " Ser ";
+            }
+            if (Szynka.isChecked()) {
+                Danie = Danie + " Szynka ";
+            }
+            switch (Sosy.getSelectedItem().toString()) {
+                case "Czosnek":
+                    Danie = Danie + "\nZ sosem Czosnkowym";
+                    break;
+                case "Pomidorowy":
+                    Danie = Danie + "\nZ sosem Pomidorowym";
+                    break;
+                case "Smietankowy":
+                    Danie = Danie + "\nZ sosem Smietankowym";
+                    break;
+            }
+            Intent i = new Intent(this, Makarony.class);
+            i.putExtra("Danie", Danie);
+            i.putExtra("Koszyk", Koszyk);
+            i.putExtra("Cena", Cena);
+            startActivity(i);
         }
-        if(przenny.isChecked()){
-            Danie = Danie + "\n"+ Koszyk +")Bolonesse:\n Makaron Przenny \n Dodatki:";
-        }
-        if(wieloziarnisty.isChecked()){
-            Danie = Danie + "\n"+ Koszyk +")Bolonesse:\n Makaron Wieloziarnisty \n Dodatki:";
-        }
-        if(Jajko.isChecked()){
-            Danie = Danie + " Jajko ";
-        }
-        if(Ser.isChecked()){
-            Danie = Danie + " Ser ";
-        }
-        if(Szynka.isChecked()){
-            Danie = Danie + " Szynka ";
-        }
-        switch (Sosy.getSelectedItem().toString()){
-            case "Czosnek":
-                Danie = Danie + "\nZ sosem Czosnkowym";
-                break;
-            case "Pomidorowy":
-                Danie = Danie + "\nZ sosem Pomidorowym";
-                break;
-            case "Smietankowy":
-                Danie = Danie + "\nZ sosem Smietankowym";
-                break;
-        }
-        Intent i = new Intent(this, Makarony.class);
-        i.putExtra("Danie", Danie);
-        i.putExtra("Koszyk", Koszyk);
-        i.putExtra("Cena", Cena);
-        startActivity(i);
     }
     public void makaron(View view) {
         RadioButton a = findViewById(R.id.radioButton_sojowy);

@@ -1,18 +1,16 @@
-package com.example.pad_pyszne.Restauracje.MakaronyMenu.MakaronyZKrewetkami;
+package com.example.pad_pyszne.Restauracje.PizzaMenu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,7 +20,7 @@ import com.example.pad_pyszne.MainActivity;
 import com.example.pad_pyszne.R;
 import com.example.pad_pyszne.Restauracje.Makarony;
 
-public class MakaronZKrewetkamiPage extends AppCompatActivity {
+public class Hawajska extends AppCompatActivity {
 
     String Danie;
     int Koszyk;
@@ -30,8 +28,7 @@ public class MakaronZKrewetkamiPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_makaron_zkrewetkami_page);
-
+        setContentView(R.layout.activity_hawajska);
         //wczytywanie zamowienia klienta
         String DanieS = getIntent().getStringExtra("Danie");
         if(DanieS == null) DanieS = "Lista Zamowien:";
@@ -80,26 +77,31 @@ public class MakaronZKrewetkamiPage extends AppCompatActivity {
     }
 
     public void zamow(View view) {
-        RadioButton sojowy = findViewById(R.id.radioButton_sojowy);
-        RadioButton przenny = findViewById(R.id.radioButton2_przenny);
-        RadioButton wieloziarnisty = findViewById(R.id.radioButton3_wieloziarnisty);
+        RadioButton Puszyste = findViewById(R.id.radioButton2_Puszyste);
+        RadioButton Cienkie = findViewById(R.id.radioButton_Cienkie);
+        RadioButton Firmowe = findViewById(R.id.radioButton3_Firmowe);
         CheckBox Jajko = findViewById(R.id.checkBox_Jajko);
         CheckBox Ser = findViewById(R.id.checkBox_Ser);
         CheckBox Szynka = findViewById(R.id.checkBox_Szynka);
         Spinner Sosy = findViewById(R.id.Spinner_Sos);
-
+        Switch Rozmiar = findViewById(R.id.Rozmiar);
         if(Koszyk == 7){
             Toast.makeText(this, "Osiagnieto limit zamowien", Toast.LENGTH_SHORT).show();
         }else {
             Koszyk += 1;
-            if (sojowy.isChecked()) {
-                Danie = Danie + "\n" + Koszyk + ")Krewetki:\n Makaron Sojowy \n Dodatki:";
+            if (Rozmiar.isChecked()) {
+                Danie = Danie + "\n" + Koszyk + ")Kapriczioza Duza";
+            } else {
+                Danie = Danie + "\n" + Koszyk + ")Kapriczioza Mala";
             }
-            if (przenny.isChecked()) {
-                Danie = Danie + "\n" + Koszyk + ")Krewetki:\n Makaron Przenny \n Dodatki:";
+            if (Puszyste.isChecked()) {
+                Danie = Danie + " na Puszystym ciescie \n Dodatki: ";
             }
-            if (wieloziarnisty.isChecked()) {
-                Danie = Danie + "\n" + Koszyk + ")Krewetki:\n Makaron Wieloziarnisty \n Dodatki:";
+            if (Cienkie.isChecked()) {
+                Danie = Danie + " na Cienkim ciescie \n Dodatki: ";
+            }
+            if (Firmowe.isChecked()) {
+                Danie = Danie + " na Firmowym ciescie \n Dodatki: ";
             }
             if (Jajko.isChecked()) {
                 Danie = Danie + " Jajko ";
@@ -132,10 +134,10 @@ public class MakaronZKrewetkamiPage extends AppCompatActivity {
             startActivity(i);
         }
     }
-    public void makaron(View view) {
-        RadioButton a = findViewById(R.id.radioButton_sojowy);
-        RadioButton b = findViewById(R.id.radioButton2_przenny);
-        RadioButton c = findViewById(R.id.radioButton3_wieloziarnisty);
+    public void Ciasto(View view) {
+        RadioButton a = findViewById(R.id.radioButton2_Puszyste);
+        RadioButton b = findViewById(R.id.radioButton_Cienkie);
+        RadioButton c = findViewById(R.id.radioButton3_Firmowe);
         Button btn = findViewById(R.id.button_zamow);
         if(a.isChecked() || b.isChecked() || c.isChecked()) btn.setEnabled(true);
     }

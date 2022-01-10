@@ -63,8 +63,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="565dp"
-        android:text="Przejdz Do strony"
-        android:onClick="page_Makarony"/>
+        android:onClick="page_Makarony"
+        android:text="Przejdz Do strony" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="385dp"
+        android:onClick="page_Kariczioza"
+        android:text="Przejdz Do strony" />
 
     <TextView
         android:layout_width="match_parent"

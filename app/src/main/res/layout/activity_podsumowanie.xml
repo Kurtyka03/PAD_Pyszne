@@ -2,53 +2,54 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context=".Podsumowanie">
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-    <Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp">
-
-        <Button
-            android:layout_width="wrap_content"
+        <Toolbar
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="page_Glowna"
-            android:text="Glowna" />
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="page_Zamownienia"
-            android:text="Zamowienia" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="page_Glowna"
+                android:text="Glowna" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="page_Koszyk"
-            android:text="Koszyk" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="page_Zamownienia"
+                android:text="Zamowienia" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ilosc: XX"
-            android:id="@+id/KoszykIlosc"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="page_Koszyk"
+                android:text="Koszyk" />
+
+            <TextView
+                android:id="@+id/KoszykIlosc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ilosc: XX" />
 
 
-    </Toolbar>
+        </Toolbar>
 
     <TextView
         android:id="@+id/ZamowieniePod"
-        android:layout_width="333dp"
-        android:layout_height="367dp"
+        android:layout_width="310dp"
+        android:layout_height="642dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="289dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="6dp"
         android:text="TextView" />
-
 </RelativeLayout>

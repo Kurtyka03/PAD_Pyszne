@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GlownaStrona">
+    tools:context=".Restauracje.Pizza">
+
 
     <Toolbar
         android:layout_width="match_parent"
@@ -42,14 +43,32 @@
     </Toolbar>
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="326dp"
-        android:layout_height="579dp"
-        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="49dp"
-        android:textSize="25dp"
-        android:text="Aplikacja Płysznelp\nW aplkiacji mozna zamowic max 6 dan\n" />
+        android:layout_marginBottom="589dp"
+        android:text="Kapriczioza :)   25zł(24cm)|30zł(30cm) \nSos,Ser,Szynka,Pieczarki"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="542dp"
+        android:onClick="Kapiriczioza"
+        android:text="Zamow I personalizuj" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="489dp"
+        android:text="Hawajska  23zł(24cm)|28zł(30cm)\nSos, Ser, Ananas, Szynka" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="442dp"
+        android:onClick="Hawajskaa"
+        android:text="Zamow I personalizuj" />
 </RelativeLayout>

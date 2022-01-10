@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Koszyk extends AppCompatActivity {
 
@@ -64,7 +65,22 @@ public class Koszyk extends AppCompatActivity {
     }
 
     public void zamow(View view) {
-        Intent i = new Intent(this, Podanie_Adresu.class);
+        if(Koszyk == 0){
+            Toast.makeText(this, "Nie zamowiles nic", Toast.LENGTH_SHORT).show();
+        }else{
+            Intent i = new Intent(this, Podanie_Adresu.class);
+            i.putExtra("Danie", Danie);
+            i.putExtra("Koszyk", Koszyk);
+            i.putExtra("Cena", Cena);
+            startActivity(i);
+        }
+    }
+
+    public void Resetuj(View view) {
+        Intent i = new Intent(this, Koszyk.class);
+        Danie = null;
+        Koszyk = 0;
+        Cena = 0.0;
         i.putExtra("Danie", Danie);
         i.putExtra("Koszyk", Koszyk);
         i.putExtra("Cena", Cena);

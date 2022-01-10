@@ -1,4 +1,4 @@
-package com.example.pad_pyszne;
+package com.example.pad_pyszne.Restauracje;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,12 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.pad_pyszne.Restauracje.Makarony;
-import com.example.pad_pyszne.Restauracje.Pizza;
+import com.example.pad_pyszne.GlownaStrona;
+import com.example.pad_pyszne.Koszyk;
+import com.example.pad_pyszne.MainActivity;
+import com.example.pad_pyszne.R;
+import com.example.pad_pyszne.Restauracje.MakaronyMenu.MakaronyZKrewetkami.MakaronZKrewetkamiPage;
+import com.example.pad_pyszne.Restauracje.MakaronyMenu.MakarooBolonski.MakaronBolonskiPage;
+import com.example.pad_pyszne.Restauracje.PizzaMenu.Hawajska;
+import com.example.pad_pyszne.Restauracje.PizzaMenu.Kapiriczioza;
 
-public class MainActivity extends AppCompatActivity {
+public class Pizza extends AppCompatActivity {
 
     String Danie;
     int Koszyk;
@@ -19,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_pizza);
         //wczytywanie zamowienia klienta
         String DanieS = getIntent().getStringExtra("Danie");
         if(DanieS == null) DanieS = "Lista Zamowien:";
@@ -49,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
     public void page_Zamownienia(View view) {
         Intent i = new Intent(this, MainActivity.class);
         i.putExtra("Danie", Danie);
-        i.putExtra("Koszyk", Koszyk);
         i.putExtra("Cena", Cena);
+        i.putExtra("Koszyk", Koszyk);
         startActivity(i);
     }
 
@@ -62,16 +66,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void page_Makarony(View view) {
-        Intent i = new Intent(this, Makarony.class);
+    public void Kapiriczioza(View view) {
+        Intent i = new Intent(this, Kapiriczioza.class);
         i.putExtra("Danie", Danie);
         i.putExtra("Koszyk", Koszyk);
         i.putExtra("Cena", Cena);
         startActivity(i);
     }
 
-    public void page_Kariczioza(View view) {
-        Intent i = new Intent(this, Pizza.class);
+    public void Hawajskaa(View view) {
+        Intent i = new Intent(this, Hawajska.class);
         i.putExtra("Danie", Danie);
         i.putExtra("Koszyk", Koszyk);
         i.putExtra("Cena", Cena);

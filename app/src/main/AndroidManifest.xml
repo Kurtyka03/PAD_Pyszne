@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PAD_Pyszne">
         <activity
+            android:name=".Restauracje.PizzaMenu.Kapiriczioza"
+            android:exported="false" />
+        <activity
+            android:name=".Restauracje.Pizza"
+            android:exported="false" />
+        <activity
             android:name=".Podsumowanie"
             android:exported="false" />
         <activity

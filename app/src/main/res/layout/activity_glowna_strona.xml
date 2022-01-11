@@ -49,7 +49,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="49dp"
-        android:textSize="25dp"
-        android:text="Aplikacja Płysznelp\nW aplkiacji mozna zamowic max 6 dan\n" />
+        android:text="Aplikacja Płysznelp\nW aplkiacji mozna zamowic max 7 dan\n"
+        android:textSize="25dp" />
 
 </RelativeLayout>

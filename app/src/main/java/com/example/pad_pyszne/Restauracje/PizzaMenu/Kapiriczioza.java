@@ -92,8 +92,10 @@ public class Kapiriczioza extends AppCompatActivity {
             Koszyk += 1;
             if (Rozmiar.isChecked()) {
                 Danie = Danie + "\n" + Koszyk + ")Kapriczioza Duza";
+                Cena += 30;
             } else {
                 Danie = Danie + "\n" + Koszyk + ")Kapriczioza Mala";
+                Cena += 25;
             }
             if (Puszyste.isChecked()) {
                 Danie = Danie + " na Puszystym ciescie \n Dodatki: ";
@@ -127,7 +129,6 @@ public class Kapiriczioza extends AppCompatActivity {
                     Danie = Danie + "\nZ sosem Smietankowym";
                     break;
             }
-            Cena += 25;
             Intent i = new Intent(this, Makarony.class);
             i.putExtra("Danie", Danie);
             i.putExtra("Koszyk", Koszyk);

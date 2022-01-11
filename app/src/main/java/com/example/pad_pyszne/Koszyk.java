@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +22,7 @@ public class Koszyk extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_koszyk);
         TextView zamowenia = findViewById(R.id.Zamowienia);
+        Button Reset = findViewById(R.id.reset);
 
         //wczytywanie zamowienia klienta
         String DanieS = getIntent().getStringExtra("Danie");
@@ -38,6 +40,8 @@ public class Koszyk extends AppCompatActivity {
         //wczytywanie ceny
         Double CenaD = getIntent().getDoubleExtra("Cena",0);
         Cena = CenaD;
+
+        if(Koszyk == 0) Reset.setEnabled(false);
     }
 
     public void page_Glowna(View view) {
